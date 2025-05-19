@@ -37,12 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'skapp.apps.skappConfig',
-    'tailwind',
-    'appui',
+    'skapp.apps.SkappConfig',
 ]
 
-TAILWIND_APP_NAME = 'appui'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
