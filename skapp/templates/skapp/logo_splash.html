@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    {% load static %}
+    <title>Streakeeper</title>
     <style>
         body{
             display: flex;
@@ -24,11 +25,11 @@
     </style>
 </head>
 <body>
-    <img src=" {% static 'images/logo.jpg' %} " alt="Streakeeper Logo" class="logo">
+    <img src=" {% static 'skapp/images/logo.jpg' %} " alt="Streakeeper Logo" class="logo">
     <script>
         setTimeout(function(){
-            window.location.href = "{% url 'home' %}"
-        })
+            window.location.href = "{% url 'home' %}";
+        }, 10000);
     </script>
 </body>
 </html>

@@ -14,8 +14,8 @@ def dashboard_view(request):
 def create_goal_view(request):
     return render(request, 'skapp/create_goal.html')
 
-def checkin_view(request):
-    return render(request, 'skapp/checkin.html')
+def check_in_view(request):
+    return render(request, 'skapp/check_in.html')
 
 def signup_view(request):
     if request.method == 'POST':
